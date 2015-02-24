@@ -145,18 +145,19 @@
                            href="#modules-and-crates">Modules and Crates</a></h1>
 <ul>
 <li>No more <code>ngx_printf</code></li>
-<li>Real package manager
-# No Cost Abstraction
-```
-trait Barking {
-fn bark(&amp;self);
-}</li>
+<li>Real package manager</li>
 </ul>
 
-<p>fn make_bark<T: Barking>(barker: T) {
-    barker.bark();
+<h1 id="no-cost-abstraction" class='section-header'><a
+                           href="#no-cost-abstraction">No Cost Abstraction</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='kw'>trait</span> <span class='ident'>Barking</span> {
+    <span class='kw'>fn</span> <span class='ident'>bark</span>(<span class='kw-2'>&amp;</span><span class='self'>self</span>);
 }
-```</p>
+
+<span class='kw'>fn</span> <span class='ident'>make_bark</span><span class='op'>&lt;</span><span class='ident'>T</span>: <span class='ident'>Barking</span><span class='op'>&gt;</span>(<span class='ident'>barker</span>: <span class='ident'>T</span>) {
+    <span class='ident'>barker</span>.<span class='ident'>bark</span>();
+}
+</pre>
 
 <h1 id="what-is-it-good-for?" class='section-header'><a
                            href="#what-is-it-good-for?">What is it good for?</a></h1>

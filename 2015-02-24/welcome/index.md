@@ -101,8 +101,10 @@ let sum: u32 =
 fn is_odd(n: u32) -> bool { n % 2 == 1 }
 ```
 # Modules and Crates
+
 - No more `ngx_printf`
 - Real package manager
+
 # No Cost Abstraction
 ```
 trait Barking {
